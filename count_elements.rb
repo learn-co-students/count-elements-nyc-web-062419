@@ -1,4 +1,8 @@
 def count_elements(array)
-  # code goes here
+  new_hash = {}
+  array.each do |char|
+    new_hash[char] = array.select {|x| x == char}.length 
+  end
+  new_hash
 end
  
