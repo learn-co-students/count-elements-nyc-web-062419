@@ -1,4 +1,6 @@
+require 'pry'
+
 def count_elements(array)
-  # code goes here
+  array.each_with_object(Hash.new(0)) { |key,counts| counts[key] += 1 }
 end
  
